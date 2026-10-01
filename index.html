@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Via Duccio Galimberti 7</title>
+<meta name="description" content="Via Duccio Galimberti 7, 41034 Finale Emilia (MO) — apri in Waze, Google Maps o Mappe">
+<style>
+  :root { --bg:#f6f6f4; --card:#fff; --text:#1a1a1a; --muted:#666; --border:#e2e2de; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121212; --card:#1e1e1e; --text:#f2f2f2; --muted:#a0a0a0; --border:#333; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding:16px;
+  }
+  main { width:100%; max-width:420px; text-align:center; }
+  .pin { font-size:40px; line-height:1; }
+  h1 { font-size:22px; margin:12px 0 4px; }
+  p.addr { color:var(--muted); margin:0 0 28px; font-size:16px; }
+  a.btn {
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    width:100%; padding:16px; margin-bottom:12px; border-radius:14px;
+    font-size:17px; font-weight:600; text-decoration:none; color:#fff;
+  }
+  .waze   { background:#1a9bd7; }
+  .google { background:#1a73e8; }
+  .apple  { background:#2b2b2b; }
+  @media (prefers-color-scheme: dark) { .apple { background:#3a3a3c; } }
+  button.copy {
+    margin-top:8px; background:none; border:1px solid var(--border); color:var(--muted);
+    padding:10px 16px; border-radius:10px; font-size:14px; cursor:pointer;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="pin">📍</div>
+  <h1>Via Duccio Galimberti, 7</h1>
+  <p class="addr">41034 Finale Emilia (MO)</p>
+
+  <a class="btn waze" href="https://waze.com/ul?q=Via%20Duccio%20Galimberti%207%2C%2041034%20Finale%20Emilia&navigate=yes">Apri in Waze</a>
+  <a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Via%20Duccio%20Galimberti%207%2C%2041034%20Finale%20Emilia%20MO">Apri in Google Maps</a>
+  <a class="btn apple" href="https://maps.apple.com/?q=Via%20Duccio%20Galimberti%207&address=Via%20Duccio%20Galimberti%207%2C%2041034%20Finale%20Emilia%20MO%2C%20Italia">Apri in Mappe</a>
+
+  <button class="copy" id="copy">Copia indirizzo</button>
+</main>
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var b = this;
+    navigator.clipboard.writeText('Via Duccio Galimberti 7, 41034 Finale Emilia (MO)')
+      .then(function () { b.textContent = 'Copiato ✓'; })
+      .catch(function () { b.textContent = 'Via Duccio Galimberti 7, 41034 Finale Emilia (MO)'; });
+  });
+</script>
+</body>
+</html>
