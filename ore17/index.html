@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Associazione Culturale Annabaoui APS — Nuova sede</title>
+<meta name="description" content="Inaugurazione della nuova sede dell'Associazione Culturale Annabaoui APS: sabato 10 ottobre, ore 17:00, Via Galimberti 7, Finale Emilia.">
+<meta name="theme-color" content="#1b304f">
+<meta property="og:title" content="Inaugurazione nuova sede — Annabaoui APS">
+<meta property="og:description" content="Sabato 10 ottobre, ore 17:00 · Via Galimberti 7, Finale Emilia">
+<meta property="og:image" content="https://annabaouiaps.github.io/qr-galimberti/img/sede.jpg">
+<link rel="icon" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=Amiri:wght@700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap">
+<style>
+  :root {
+    --navy:#1b304f; --navy-2:#24406a; --gold:#b08d57; --gold-2:#d6b97f; --brown:#553a1f;
+    --cream:#f3efe6; --paper:#fbf9f4; --ink:#1d2430; --muted:#5d6573;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { -webkit-text-size-adjust:100%; }
+  body { font-family:"Source Sans 3",system-ui,sans-serif; font-size:17px; line-height:1.55; color:var(--ink);
+         background:var(--paper); padding-bottom:calc(96px + env(safe-area-inset-bottom)); }
+  .wrap { max-width:560px; margin:0 auto; padding:0 20px; }
+  section { padding:44px 0; }
+  .eyebrow { font-family:"Cinzel",serif; font-weight:600; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); }
+  h2 { font-family:"Cinzel",serif; font-weight:700; font-size:26px; line-height:1.15; color:var(--navy); margin-top:6px; }
+  .rule { width:48px; height:2px; background:var(--gold); margin:18px 0; }
+  .center { text-align:center; } .center .rule { margin-left:auto; margin-right:auto; }
+  .ar { font-family:"Amiri",serif; direction:rtl; }
+
+  /* Hero */
+  .hero { background:var(--cream); text-align:center; padding:36px 0 40px; }
+  .hero img.logo { width:min(250px,68vw); height:auto; display:block; margin:0 auto; }
+  .hero .name { font-family:"Cinzel",serif; font-weight:700; font-size:20px; line-height:1.25; color:var(--navy); margin-top:22px; letter-spacing:.03em; }
+  .hero .ar { font-size:24px; color:var(--brown); margin-top:4px; }
+  .hero .what { font-family:"Cinzel",serif; font-weight:600; font-size:13px; letter-spacing:.14em; text-transform:uppercase; line-height:1.6; }
+  .date { background:var(--navy); color:#fff; border-radius:14px; padding:22px 16px 20px; margin-top:24px; }
+  .date .day { font-family:"Cinzel",serif; font-weight:600; font-size:13px; letter-spacing:.22em; color:var(--gold-2); text-transform:uppercase; }
+  .date .big { font-family:"Cinzel",serif; font-weight:700; font-size:clamp(34px,10vw,44px); line-height:1; margin:8px 0 10px; }
+  .date .time { font-weight:700; font-size:19px; letter-spacing:.04em; }
+  .hero .where { color:var(--muted); font-size:15px; margin-top:14px; }
+
+  .lead { font-family:"Cormorant Garamond",serif; font-style:italic; font-weight:600; font-size:27px; line-height:1.18; color:var(--navy); margin-top:10px; }
+  p + p { margin-top:12px; }
+
+  /* Servizi */
+  .item { display:flex; gap:14px; margin-top:26px; }
+  .icon { width:46px; height:46px; flex:none; border-radius:50%; background:var(--navy); display:grid; place-items:center; }
+  .icon svg { width:23px; height:23px; stroke:var(--gold-2); fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+  .num { font-family:"Cinzel",serif; font-weight:600; font-size:12px; color:var(--gold); letter-spacing:.1em; }
+  h3 { font-family:"Cinzel",serif; font-weight:700; font-size:16px; line-height:1.25; color:var(--navy); margin-bottom:6px; letter-spacing:.02em; }
+
+  /* Foto */
+  figure.photo { margin:0; position:relative; }
+  figure.photo img { display:block; width:100%; height:auto; aspect-ratio:1250/800; object-fit:cover; }
+  figure.photo figcaption { position:absolute; left:16px; bottom:14px; background:var(--navy); color:#fff; font-size:13px; font-weight:600;
+                            padding:5px 12px; border-radius:99px; }
+
+  /* Citazione + invito */
+  .dark { background:var(--navy); color:#fff; }
+  .quote .mark { font-family:"Cormorant Garamond",serif; font-size:84px; line-height:.6; color:var(--gold-2); height:34px; }
+  .quote p { font-family:"Cormorant Garamond",serif; font-style:italic; font-weight:500; font-size:25px; line-height:1.28; }
+  .invite { margin-top:34px; border:1.5px solid var(--gold-2); border-radius:14px; padding:22px; text-align:center; }
+  .invite .eyebrow { color:var(--gold-2); }
+  .invite .t { font-family:"Cinzel",serif; font-weight:700; font-size:21px; margin-top:8px; letter-spacing:.04em; }
+  .invite .d { margin-top:8px; }
+  .invite .d b { color:var(--gold-2); }
+
+  /* Contatti */
+  .contacts { list-style:none; margin-top:8px; }
+  .contacts li { display:flex; gap:14px; align-items:baseline; padding:14px 0; border-bottom:1px solid #e6e0d3; }
+  .contacts .k { width:86px; flex:none; font-family:"Cinzel",serif; font-weight:600; font-size:11px; letter-spacing:.14em; color:var(--gold); text-transform:uppercase; }
+  .contacts a { color:var(--navy); font-weight:700; text-decoration:none; word-break:break-all; }
+  footer { text-align:center; color:var(--muted); font-size:13px; padding:8px 20px 28px; }
+
+  /* Bottone fisso */
+  .cta { position:fixed; left:0; right:0; bottom:0; z-index:20; padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+         background:linear-gradient(to top, rgba(251,249,244,1) 55%, rgba(251,249,244,0)); }
+  .cta button { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; max-width:528px; margin:0 auto;
+                border:0; border-radius:16px; padding:17px; background:var(--navy); color:#fff; cursor:pointer;
+                font-family:"Cinzel",serif; font-weight:700; font-size:18px; letter-spacing:.08em;
+                box-shadow:0 10px 28px rgba(27,48,79,.35); }
+  .cta button svg { width:22px; height:22px; stroke:var(--gold-2); fill:none; stroke-width:2; }
+  .cta button:active { transform:scale(.98); }
+
+  /* Scelta navigatore */
+  .backdrop { position:fixed; inset:0; background:rgba(10,18,30,.5); z-index:30; opacity:0; pointer-events:none; transition:opacity .25s; }
+  .sheet { position:fixed; left:0; right:0; bottom:0; z-index:31; background:#fff; border-radius:22px 22px 0 0;
+           padding:12px 20px calc(22px + env(safe-area-inset-bottom)); max-width:560px; margin:0 auto;
+           transform:translateY(105%); transition:transform .3s cubic-bezier(.16,1,.3,1); }
+  .open .backdrop { opacity:1; pointer-events:auto; }
+  .open .sheet { transform:none; }
+  .sheet .grab { width:40px; height:4px; border-radius:4px; background:#d9d4c8; margin:0 auto 16px; }
+  .sheet h4 { font-family:"Cinzel",serif; font-size:17px; color:var(--navy); text-align:center; }
+  .sheet .addr { text-align:center; color:var(--muted); font-size:15px; margin:4px 0 18px; }
+  .sheet a.btn { display:flex; align-items:center; justify-content:center; width:100%; padding:16px; margin-bottom:10px; border-radius:14px;
+                 font-size:17px; font-weight:700; text-decoration:none; color:#fff; }
+  .google { background:#1a73e8; } .waze { background:#1a9bd7; } .apple { background:#2b2b2b; }
+  .sheet .row { display:flex; gap:10px; margin-top:4px; }
+  .sheet .row button { flex:1; padding:13px; border-radius:12px; border:1px solid #ddd6c8; background:#fff; color:var(--ink);
+                       font:600 15px "Source Sans 3",sans-serif; cursor:pointer; }
+  @media (prefers-reduced-motion: reduce) { .sheet, .backdrop { transition:none; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="../img/logo.png" width="560" height="576" alt="Logo Associazione Culturale Annabaoui APS">
+    <div class="name">Associazione Culturale<br>Annabaoui APS</div>
+    <div class="ar">الجمعية الثقافية النبوي</div>
+    <div class="rule" style="margin:18px auto"></div>
+    <div class="what">Inaugurazione e presentazione<br>della nuova sede</div>
+    <div class="date">
+      <div class="day">Sabato</div>
+      <div class="big">10 Ottobre</div>
+      <div class="time">ore 17:00</div>
+    </div>
+    <p class="where">Via Galimberti n° 7 · Finale Emilia (MO)</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Chi siamo</div>
+    <p class="lead">Un ponte di cultura, dialogo, mediazione sociale e integrazione.</p>
+    <div class="rule"></div>
+    <p>L'Associazione Culturale Annabaoui APS è una realtà sociale e culturale nata per promuovere i valori della convivenza pacifica, del dialogo interculturale e della cittadinanza attiva nel nostro territorio.</p>
+    <p>Rappresentiamo un punto di riferimento trasparente e collaborativo per tutta la comunità e un partner aperto al dialogo con le istituzioni locali.</p>
+  </div>
+</section>
+
+<figure class="photo">
+  <img src="../img/sede.jpg" width="1250" height="800" alt="La nuova sede in Via Galimberti 7, Finale Emilia" loading="lazy">
+  <figcaption>La nuova sede · Via Galimberti n° 7</figcaption>
+</figure>
+
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <div class="eyebrow">I nostri obiettivi</div>
+    <h2>Servizi per la città</h2>
+    <div class="rule"></div>
+
+    <div class="item">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 5h11a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M19 9h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-4-3h-4"/></svg></div>
+      <div><div class="num">01</div><h3>Mediazione sociale e comunicazione</h3>
+      <p>Agiamo come ponte di comunicazione e mediazione tra la cittadinanza e l'Amministrazione Comunale, per sensibilizzare i residenti, diffondere le normative locali e prevenire incomprensioni.</p></div>
+    </div>
+    <div class="item">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 5c3-1.5 6.5-1.5 10 1 3.5-2.5 7-2.5 10-1v14c-3-1.5-6.5-1.5-10 1-3.5-2.5-7-2.5-10-1z"/><path d="M12 6v14"/></svg></div>
+      <div><div class="num">02</div><h3>Educazione e formazione giovanile</h3>
+      <p>Offriamo percorsi educativi, linguistici e culturali per bambini e ragazzi, promuovendo i valori del rispetto reciproco e della responsabilità civica.</p></div>
+    </div>
+    <div class="item">
+      <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.8 2.6 4 6 4 9.5s-1.2 6.9-4 9.5c-2.8-2.6-4-6-4-9.5s1.2-6.9 4-9.5z"/></svg></div>
+      <div><div class="num">03</div><h3>Dialogo interculturale e integrazione</h3>
+      <p>Promuoviamo iniziative aperte a tutti i cittadini e ai vicini di casa per favorire la conoscenza reciproca e la coesione sociale.</p></div>
+    </div>
+    <div class="item">
+      <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></svg></div>
+      <div><div class="num">04</div><h3>Progetti giovanili e volontariato</h3>
+      <p>Valorizziamo i giovani del territorio, rendendoli protagonisti attivi e responsabili nella vita sociale e culturale della città.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="quote">
+      <div class="mark">“</div>
+      <p>La nostra associazione vuole essere una risorsa concreta per l'intera città di Finale Emilia: uno spazio di dialogo, mediazione sociale e collaborazione per costruire insieme un futuro sereno, inclusivo e partecipe.</p>
+    </div>
+    <div class="invite">
+      <div class="eyebrow">Vi aspettiamo</div>
+      <div class="t">Inaugurazione della nuova sede</div>
+      <div class="d"><b>Sabato 10 ottobre · ore 17:00</b><br>Via Galimberti n° 7, Finale Emilia<br>Tutta la cittadinanza è invitata</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Informazioni e contatti</div>
+    <h2>Contattaci</h2>
+    <ul class="contacts">
+      <li><span class="k">Sede</span><span>Via Galimberti n° 7<br>41034 Finale Emilia (MO)</span></li>
+      <li><span class="k">Email</span><a href="mailto:ac.annabaoui@gmail.com">ac.annabaoui@gmail.com</a></li>
+      <li><span class="k">Telefono</span><a href="tel:+393801825925">+39 380 182 5925</a></li>
+      <li><span class="k">C.F.</span><span>91018520360</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>Associazione Culturale Annabaoui APS · Associazione di Promozione Sociale · Finale Emilia</footer>
+
+<!-- Bottone sempre visibile -->
+<div class="cta">
+  <button id="go" type="button" aria-haspopup="dialog" aria-controls="sheet">
+    <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+    Raggiungici
+  </button>
+</div>
+
+<!-- Scelta del navigatore -->
+<div class="backdrop" id="backdrop"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <div class="grab"></div>
+  <h4 id="sheet-title">Con quale app vuoi arrivare?</h4>
+  <p class="addr">Via Galimberti 7, 41034 Finale Emilia (MO)</p>
+  <a class="btn google" href="https://www.google.com/maps/search/?api=1&query=Via%20Duccio%20Galimberti%207%2C%2041034%20Finale%20Emilia%20MO">Google Maps</a>
+  <a class="btn waze" href="https://waze.com/ul?q=Via%20Duccio%20Galimberti%207%2C%2041034%20Finale%20Emilia&navigate=yes">Waze</a>
+  <a class="btn apple" href="https://maps.apple.com/?q=Via%20Duccio%20Galimberti%207&address=Via%20Duccio%20Galimberti%207%2C%2041034%20Finale%20Emilia%20MO%2C%20Italia">Mappe (iPhone)</a>
+  <div class="row">
+    <button type="button" id="copy">Copia indirizzo</button>
+    <button type="button" id="close">Chiudi</button>
+  </div>
+</div>
+
+<script>
+  var root = document.documentElement;
+  function open_()  { root.classList.add('open'); }
+  function close_() { root.classList.remove('open'); }
+  document.getElementById('go').addEventListener('click', open_);
+  document.getElementById('close').addEventListener('click', close_);
+  document.getElementById('backdrop').addEventListener('click', close_);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close_(); });
+  document.getElementById('copy').addEventListener('click', function () {
+    var b = this, t = 'Via Duccio Galimberti 7, 41034 Finale Emilia (MO)';
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject())
+      .then(function () { b.textContent = 'Copiato ✓'; })
+      .catch(function () { b.textContent = t; });
+  });
+</script>
+</body>
+</html>
